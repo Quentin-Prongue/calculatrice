@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaCalculatrice.TextInputLayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/main_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="@dimen/main_result_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_component_space"
+        android:layout_marginEnd="@dimen/main_component_space"
+        android:alignmentMode="alignBounds"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <!-- Ligne 1 -->
+        <Button
+            android:id="@+id/clear"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:layout_marginEnd="@dimen/main_margin_size"
+            android:text="@string/clear"
+            android:textColor="@color/red" />
+
+        <Button
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:layout_marginEnd="@dimen/main_margin_size" />
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:layout_marginEnd="@dimen/main_margin_size"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/division"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/divide" />
+
+        <!-- Ligne 2 -->
+        <Button
+            android:id="@+id/num7"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num7" />
+
+        <Button
+            android:id="@+id/num8"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num8" />
+
+        <Button
+            android:id="@+id/num9"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num9" />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/times" />
+
+        <!-- Ligne 3 -->
+        <Button
+            android:id="@+id/num4"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num4" />
+
+        <Button
+            android:id="@+id/num5"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num5" />
+
+        <Button
+            android:id="@+id/num6"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num6" />
+
+        <Button
+            android:id="@+id/substraction"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/minus" />
+
+        <!-- Ligne 4 -->
+        <Button
+            android:id="@+id/num1"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num1" />
+
+        <Button
+            android:id="@+id/num2"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num2" />
+
+        <Button
+            android:id="@+id/num3"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num3" />
+
+        <Button
+            android:id="@+id/addition"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/plus" />
+
+        <!-- Ligne 5 -->
+        <Button
+            android:id="@+id/dot"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/dot" />
+
+        <Button
+            android:id="@+id/num0"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:text="@string/num0" />
+
+        <Button
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:layout_marginEnd="@dimen/main_margin_size" />
+
+        <Button
+            android:id="@+id/equal"
+            style="@style/Widget.MaCalculatrice.Button"
+            android:layout_width="@dimen/main_button_width_size"
+            android:layout_height="@dimen/main_button_height_size"
+            android:backgroundTint="@color/lightskyblue"
+            android:textColor="@color/darkgreyV2"
+            android:text="@string/equal" />
+    </GridLayout>
+</LinearLayout>

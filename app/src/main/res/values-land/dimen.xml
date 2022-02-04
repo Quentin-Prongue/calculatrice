@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_margin_size">20dp</dimen>
+    <dimen name="main_margin_top_size">15dp</dimen>
+    <dimen name="main_component_space">50dp</dimen>
+    <dimen name="main_text_size">15sp</dimen>
+    <dimen name="main_result_text_size">30sp</dimen>
+    <dimen name="main_title_size">30sp</dimen>
+    <dimen name="main_button_width_size">125dp</dimen>
+    <dimen name="main_sign_button_width_size">175dp</dimen>
+    <dimen name="main_button_height_size">40dp</dimen>
+</resources>
